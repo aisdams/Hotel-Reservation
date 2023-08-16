@@ -3,9 +3,9 @@ import { useIsMediumScreen } from '@/hooks';
 
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 // import { cn } from '@/lib/utils';
-import Footer from './footer';
+import Footer from './Footer';
 // import SettingsModal from './SettingsModal';
-import Topbar from './topbar';
+import Topbar from './Topbar';
 
 type LayoutProps = {
   children: React.ReactNode;

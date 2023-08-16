@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 
 import { PersistGate } from 'redux-persist/integration/react';
 import reduxStore from '@/redux/store';
-import Layout from '@/components/layouts/layout';
+import Layout from '@/components/layouts/Layout';
 import AppProvider from '@/components/providers/AppProvider';
 
 const { persistor, store } = reduxStore();

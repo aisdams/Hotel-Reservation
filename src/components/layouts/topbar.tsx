@@ -1,9 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
 import {SiLoopback} from 'react-icons/si'
 import {AiOutlineQuestionCircle} from 'react-icons/ai'
 import {IoMdNotificationsOutline} from 'react-icons/io'
-import Profile from './profile'
+import Profile from './Profile'
 
 export default function Topbar() {
   return (

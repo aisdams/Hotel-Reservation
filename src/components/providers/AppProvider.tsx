@@ -8,7 +8,7 @@ import { ToastContainer } from 'react-toastify';
 
 import { useAppSelector } from '@/redux/hooks';
 import { setIsAnimating } from '@/redux/slices/appSlice';
-import Progress from '@/components/progress/circleProgress';
+import Progress from '@/components/progress/CircleProgress';
 
 type AppProviderProps = {
   children: React.ReactNode;
