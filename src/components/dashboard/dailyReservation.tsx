@@ -5,7 +5,7 @@ import { AiOutlineCheckCircle } from 'react-icons/ai';
 
 export default function DailyReservation() {
   return (
-    <div className="mt-[10rem] mx-10 absolute">
+    <div className='mt-10 mx-4'>
       <div className="grid grid-cols-[3fr_1fr] gap-5">
         <div
           className="relative py-4 px-10"
@@ -231,7 +231,12 @@ export default function DailyReservation() {
       </div>
 
       <div className="grid grid-cols-3 gap-5 mt-[3rem]">
-        <div style={{ boxShadow: '10px 14px 10px rgba(0, 0, 0, 0.1)' }}>
+      <div
+          className="relative pb-10 px-10"
+          style={{
+            boxShadow: '10px 14px 10px rgba(0, 0, 0, 0.1)',
+          }}
+        >
           <div className="flex items-start gap-3">
             <h1 className="uppercase font-semibold text-lg">Pace Summary</h1>
             <LuAlertCircle className="my-2" />

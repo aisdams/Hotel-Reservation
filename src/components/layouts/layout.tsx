@@ -15,15 +15,16 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const dispatch = useAppDispatch();
   return (
-    <div className="relative min-h-screen font-sans text-sm dark:text-[#FAFAFA]">
+    <div className="relative font-sans text-sm dark:text-[#FAFAFA]">
+      <Topbar />
       <div className="flex">
         <Sidebar />
         {children}
-        <Topbar />
       </div>
-
       {/* <Footer /> */}
-      {/* <div className="min-h-[calc(100vh-65px-33px)] bg-background p-4"></div> */}
+      <div className="bg-blue-500 text-white p-2">
+        <Footer />
+      </div>
 
       {/* <SettingsModal /> */}
     </div>

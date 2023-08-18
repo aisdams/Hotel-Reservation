@@ -1,13 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
 import TopbarData from '@/data/TopbarData';
+import { IoIosArrowForward } from 'react-icons/io';
 
 export default function Sidebar() {
   return (
-    <div className="block w-[20%] text-center h-screen mt-10">
-      <h2>
-        Hotel <span className="text-red-500 text-2xl">Wes</span>tore
-      </h2>
+    <div
+      className="block text-center h-screen w-[25%]"
+      style={{
+        boxShadow: '10px 14px 10px rgba(0, 0, 0, 0.1)',
+      }}
+    >
+      <div className="flex justify-between relative">
+        <h2 className="text-xl font-semibold mx-auto text-center">
+          Hotel <span className="text-red-500 text-2xl">Wes</span>tore
+        </h2>
+        <div className="rounded-full p-2 absolute -right-4">
+          <IoIosArrowForward className="text-xl text-white" />
+        </div>
+      </div>
 
       <ul className="mt-5">
         {TopbarData.map((sidebar) => (

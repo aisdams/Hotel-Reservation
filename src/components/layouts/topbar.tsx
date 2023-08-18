@@ -8,8 +8,8 @@ import Link from 'next/link';
 
 export default function Topbar() {
   return (
-    <nav className="w-[80%]">
-      <div className="bg-blue-500 py-1 px-5 flex justify-between items-center sticky top-0">
+    <nav>
+      <div className="bg-blue-500 py-1 px-5 flex justify-between items-center">
         <div className="leftTop flex gap-4 items-center">
           <div
             className="bg-black/10 p-2 rounded-full"
