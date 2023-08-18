@@ -1,13 +1,11 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import DailyReservation from '@/components/dashboard/DailyReservation';
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import Dashboard from './dashboard';
 
 export default function Home() {
   return (
     <div className="">
-      <DailyReservation/>
+      <Dashboard />
     </div>
   );
 }

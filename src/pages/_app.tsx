@@ -43,13 +43,11 @@ export default function App({
       <PersistGate loading={null} persistor={persistor}>
         <QueryClientProvider client={qc}>
           <Head>
-            <title>WMS App</title>
-            <link rel='icon' href='/favicon.ico' />
+            <title>Hotel Reservation</title>
+            <link rel="icon" href="/favicon.ico" />
           </Head>
-          <AppProvider>
-            {getLayout(<Component {...pageProps} />)}
-          </AppProvider>
-          <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
+          <AppProvider>{getLayout(<Component {...pageProps} />)}</AppProvider>
+          <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
         </QueryClientProvider>
       </PersistGate>
     </Provider>
