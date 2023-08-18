@@ -2,7 +2,7 @@ const TopbarData = [
   {
     title: 'Dashboard',
     type: 'info',
-    link: '/dashboard',
+    link: '/',
   },
   {
     title: 'Room & Rates',

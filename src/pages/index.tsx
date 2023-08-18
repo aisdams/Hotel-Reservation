@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import Dashboard from './dashboard';
+import Dashboard from './Dashboard';
 
 export default function Home() {
   return (

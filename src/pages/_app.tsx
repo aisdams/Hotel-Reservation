@@ -1,18 +1,16 @@
 import '@/styles/globals.css';
-
-import React from 'react';
-import type { ReactElement, ReactNode } from 'react';
+import Layout from '@/components/layouts/Layout';
+import AppProvider from '@/components/providers/AppProvider';
+import reduxStore from '@/redux/store';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import React from 'react';
+import type { ReactElement, ReactNode } from 'react';
 import { Provider } from 'react-redux';
-
 import { PersistGate } from 'redux-persist/integration/react';
-import reduxStore from '@/redux/store';
-import Layout from '@/components/layouts/Layout';
-import AppProvider from '@/components/providers/AppProvider';
 
 const { persistor, store } = reduxStore();
 
@@ -44,7 +42,10 @@ export default function App({
         <QueryClientProvider client={qc}>
           <Head>
             <title>Hotel Reservation</title>
-            <link rel="icon" href="/favicon.ico" />
+            <link
+              rel="icon"
+              href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKahhMZhtVqzIf-c4orrA6xMtQGhzxQFK2w&usqp=CAU"
+            />
           </Head>
           <AppProvider>{getLayout(<Component {...pageProps} />)}</AppProvider>
           <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />

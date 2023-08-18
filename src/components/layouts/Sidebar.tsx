@@ -15,8 +15,8 @@ export default function Sidebar() {
         <h2 className="text-xl font-semibold mx-auto text-center">
           Hotel <span className="text-red-500 text-2xl">Wes</span>tore
         </h2>
-        <div className="rounded-full p-2 absolute -right-4">
-          <IoIosArrowForward className="text-xl text-white" />
+        <div className="rounded-full p-2 absolute top-3 -right-4 bg-blue-100">
+          <IoIosArrowForward className="text-xl text-gray-500" />
         </div>
       </div>
 
