@@ -1,14 +1,14 @@
 import React from 'react';
-import { LuAlertCircle } from 'react-icons/lu';
-import { BiRightArrowCircle } from 'react-icons/bi';
 import { AiOutlineCheckCircle } from 'react-icons/ai';
+import { BiRightArrowCircle } from 'react-icons/bi';
+import { LuAlertCircle } from 'react-icons/lu';
 
 export default function DailyReservation() {
   return (
-    <div className='mt-10 mx-4'>
-      <div className="grid grid-cols-[3fr_1fr] gap-5">
+    <div className="mx-4 mt-10">
+      <div className="flex gap-5 rounded-lg">
         <div
-          className="relative py-4 px-10"
+          className="relative py-4 px-10 w-[70%]"
           style={{
             boxShadow: '10px 14px 10px rgba(0, 0, 0, 0.1)',
           }}
@@ -50,7 +50,7 @@ export default function DailyReservation() {
         </div>
 
         <div
-          className="card py-3 w-[20rem] h-[9rem]"
+          className="card py-3 h-[9rem] w-[30%]"
           style={{
             position: 'relative',
             boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
@@ -99,9 +99,9 @@ export default function DailyReservation() {
         </div>
       </div>
 
-      <div className="grid grid-cols-[3fr_1fr] gap-5 mt-[3rem]">
+      <div className="flex gap-5 mt-[3rem]">
         <div
-          className="relative py-4 px-10"
+          className="relative py-4 px-10 w-[70%]"
           style={{
             boxShadow: '10px 14px 10px rgba(0, 0, 0, 0.1)',
           }}
@@ -178,7 +178,7 @@ export default function DailyReservation() {
         </div>
 
         <div
-          className="card px-3"
+          className="card px-3 w-[30%]"
           style={{ boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.4)' }}
         >
           <div className="flex justify-between">
@@ -231,7 +231,7 @@ export default function DailyReservation() {
       </div>
 
       <div className="grid grid-cols-3 gap-5 mt-[3rem]">
-      <div
+        <div
           className="relative pb-10 px-10"
           style={{
             boxShadow: '10px 14px 10px rgba(0, 0, 0, 0.1)',

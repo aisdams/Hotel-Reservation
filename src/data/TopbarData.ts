@@ -7,7 +7,7 @@ const TopbarData = [
   {
     title: 'Room & Rates',
     type: 'info',
-    link: '/room-rates',
+    link: '/room-rates/try',
   },
   {
     title: 'Distribution',

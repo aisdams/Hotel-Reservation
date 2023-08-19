@@ -1,14 +1,12 @@
 import 'react-toastify/dist/ReactToastify.css';
-
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { MantineProvider } from '@mantine/core';
-import { useDispatch } from 'react-redux';
-import { ToastContainer } from 'react-toastify';
-
+import Progress from '@/components/progress/Progress';
 import { useAppSelector } from '@/redux/hooks';
 import { setIsAnimating } from '@/redux/slices/appSlice';
-import Progress from '@/components/progress/CircleProgress';
+import { MantineProvider } from '@mantine/core';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
 
 type AppProviderProps = {
   children: React.ReactNode;
@@ -62,7 +60,7 @@ const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
 function ReactToastify() {
   return (
     <ToastContainer
-      position='top-right'
+      position="top-right"
       autoClose={4000}
       hideProgressBar={false}
       newestOnTop={false}

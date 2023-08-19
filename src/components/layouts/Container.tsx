@@ -8,10 +8,7 @@ type ContainerProps = {
 
 const Container: React.FC<ContainerProps> = ({ children, id, className }) => {
   return (
-    <div
-      id={id}
-      className={cn('rounded-xl border bg-card p-4 shadow', className)}
-    >
+    <div id={id} className={cn('rounded-xl p-4 shadow', className)}>
       {children}
     </div>
   );
